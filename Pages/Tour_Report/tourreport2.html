@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mankato_P&DF/Pages/Tour_Report/tourreport2.css">
+    <title>Tour Report</title>
+</head>
+<body>
+    <nav>
+        | <a>Log In</a> | <a href="/Mankato_P&DF/programs/MANKATO P&DF SCHEDULE SPREADSHEET.xlsm">Excel Scheduler</a> | <a href="/Mankato_P&DF/programs/TOUR REPORT.xlsm">Excel Tour Report</a> | <a href="/Mankato_P&DF/programs/EOD Report.xlsm">Excel EOD</a>
+        | <a href="/Mankato_P&DF/Pages/Reports/reports.html">Reports</a> | <a href="/Mankato_P&DF/Pages/Scheduler/scheduler.html">Scheduler Page</a> | <a href="/Mankato_P&DF/Pages/Tour Report/tourReport.html">Tour Report Page</a> | <a href="/Mankato_P&DF/Pages/EOD/eod.html">EOD Page</a> |
+    </nav>
+    <h1>Tour Report</h1>
+    <h2>Create New Record</h2>
+    <h3>
+        <button class="open-button section" onclick="openSectionForm()">Section Note</button><span class="employeemoves tab">Employee Moves</span><span class="overtime tab">Overtime</span><span class="reports tab">Reports</span><span class="other tab">Other</span>
+    </h3>
+    <div class="form-dropdown" id="sectionForm">
+        <form class="form-container">
+            <h1 class="dropdown-title">Chose Section</h1>
+            <input type="radio" id="dock" name="section" value="dock">
+                <label for="dock">Dock</label>
+            <input type="radio" id="dbcs" name="section" value="dbcs">
+                <label for="dbcs">DBCS</label>
+            <input type="radio" id="afsm" name="section" value="afsm">
+                <label for="afsm">AFSM</label>
+            <input type="radio" id="manual" name="section" value="manual">
+                <label for="manual">Manual</label>
+            <input type="radio" id="open" name="section" value="open">
+                <label for="open">Open</label>
+            <input type="radio" id="lips" name="section" value="lips">
+                <label for="lips">LIPS</label>
+            <button type="submit" class="btn">Confirm</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+<script src="/Mankato_P&DF/Pages/Tour_Report/tourreport2app.js"></script>
+</body>
+</html>

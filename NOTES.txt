@@ -1,0 +1,36 @@
+IDEAS FOR MANKATO P&DF WEBSITE:
+
+Attendance control page
+
+Log In system
+
+Call Ins
+    Some type of notification system
+        - Maybe it only works when logged In
+        - Banner?
+        - Pop-up?
+        - Gives a name when logged in, otherwise it just notifies of a call in?
+
+ERMS/TACS intigration?
+
+Non-Excel Tour Report & EOD & Scheduler
+    Figure a way to make 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--END-->

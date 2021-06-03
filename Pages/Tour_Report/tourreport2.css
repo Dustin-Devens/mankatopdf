@@ -1,0 +1,55 @@
+.tab, .section {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 30% 0px 0px 0px;
+    display: inline-block;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+}
+
+.tab:hover, .section:hover {
+    background-color: rgb(0, 75, 135);
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+    border-bottom: 2px solid rgb(0, 75, 135);
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    top: -1em;
+    font-size: 2em;
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    top: -2.5em;
+}
+
+.form-dropdown {
+    display: none;
+    position: relative;
+    bottom: 5.3em;
+    left: 15em;
+    border: 2px solid black;
+    width: 9.4em;
+    background: rgb(0, 75, 135);
+    color: white;
+    padding-bottom: 1em;
+  }
+
+  .dropdown-title {
+      font-size: 1em;
+  }
+
+  .btn {
+      margin-top: 1em;
+  }
