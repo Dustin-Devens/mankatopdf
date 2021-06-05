@@ -1,19 +1,29 @@
 {
-  "name": "git-test",
+  "name": "mankato_pdf",
   "version": "1.0.0",
-  "description": "Git and NPM",
-  "main": "index.html",
+  "description": "Website for the Mankato MN, Mail Processing Facility.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
     "lite": "lite-server"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/Dustin-Devens/mankatopdf.git"
   },
-  "author": "",
+  "author": "Dustin Devens",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dustin-Devens/mankatopdf/issues"
+  },
+  "homepage": "https://github.com/Dustin-Devens/mankatopdf#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }

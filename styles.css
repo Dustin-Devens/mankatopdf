@@ -8,7 +8,7 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #3046C5;
+    color: #1f7bc5;
 }
 
 header h2 {
@@ -22,7 +22,7 @@ footer {
 
 .jumbotron {
     padding: 30px;
-    background-image: linear-gradient(to right, #004B87, #5caaeb, white);
+    background-image: linear-gradient(to right, #004B87, #1f7bc5, black);
     color: white;
 }
 
