@@ -16,6 +16,10 @@ h2 {
     color: #1f7bc5;
 }
 
+hr {
+    border-bottom: #d8d8d8 .25em solid;
+}
+
 a {
     color: #d8d8d8;
     font-weight: bold;
