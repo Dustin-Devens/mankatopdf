@@ -1,18 +1,32 @@
 body {
     font-family: "Open Sans", sans-serif;
     display: flexbox;
+    background: #d8d8d8;
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: "Limelight", truetype;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 h2 {
     color: #1f7bc5;
 }
 
+a {
+    color: #d8d8d8;
+    font-weight: bold;
+}
+
+#logo {
+    height: 8em;
+}
+
 header h2 {
-    color: #b0d5f3;
+    color: #d8d8d8;
 }
 
 footer {
@@ -22,7 +36,7 @@ footer {
 
 .jumbotron {
     padding: 30px;
-    background-image: linear-gradient(to right, #004B87, #1f7bc5, black);
+    background-image: linear-gradient(to right, #333465, #6e93e2, #000000);
     color: white;
 }
 
