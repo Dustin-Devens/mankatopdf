@@ -1,0 +1,132 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flexbox;
+    background: #d8d8d8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Limelight", truetype;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    color: #1f7bc5;
+}
+
+hr {
+    border-bottom: #d8d8d8 .25em solid;
+}
+
+a {
+    color: #d8d8d8;
+    font-weight: bold;
+}
+
+#logo {
+    height: 8em;
+}
+
+header h2 {
+    color: #d8d8d8;
+}
+
+footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, #333465, #6e93e2, #000000);
+    color: white;
+}
+
+.row-content {
+    pad: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+tr {
+    height: 30px;
+}
+
+table, tr, td, th {
+    border: 1px black solid;
+    text-align: center;
+}
+
+#ppA {
+    background: blue;
+    color: white;
+    border-left: 2px solid black;
+}
+
+#ppB {
+    background: green;
+    color: white;
+    border-left: 2px solid black;
+}
+
+#week1a {
+    background: rgb(115, 187, 255);
+    border-left: 2px solid black;
+}
+
+#week2a {
+    background: rgb(139, 127, 252);
+    border-left: 2px solid black;
+}
+
+#week1b {
+    background: rgb(80, 255, 80);
+    border-left: 2px solid black;
+}
+
+#week2b {
+    background: rgb(81, 216, 122);
+    border-left: 2px solid black;
+}
+#sat, #sun, #mon, #tue, #wed, #thu, #fri {
+    border-bottom: 2px solid black;
+}
+
+#sat {
+    background: pink;
+    border-left: 2px solid black;
+}
+
+#sun {
+    background: white;
+}
+
+#mon {
+    background: rgb(91, 156, 255);
+}
+
+#tue {
+    background: orange;
+}
+
+#wed {
+    background: rgb(54, 221, 54);
+}
+
+#thu {
+    background: violet;
+}
+
+#fri {
+    background: yellow;
+}
+
+
+
+
+
+

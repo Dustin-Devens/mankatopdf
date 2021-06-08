@@ -1,22 +1,964 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mankato P&DF Scheduler</title>
-</head>
-<body>
-    <nav>| <a>Log In</a> | <a href="/Mankato_P&DF/programs/MANKATO P&DF SCHEDULE SPREADSHEET.xlsm">Excel Scheduler</a> | <a href="/Mankato_P&DF/programs/TOUR REPORT.xlsm">Excel Tour Report</a> | <a href="/Mankato_P&DF/programs/EOD Report.xlsm">Excel EOD</a>
-    | <a href="/Mankato_P&DF/Pages/Reports/reports.html">Reports</a> | <a href="/Mankato_P&DF/Pages/Scheduler/scheduler.html">Scheduler Page</a> | <a href="/Mankato_P&DF/Pages/Tour Report/tourReport.html">Tour Report Page</a> | <a href="/Mankato_P&DF/Pages/EOD/eod.html">EOD Page</a> |</nav>
-    
-    <nav>| <a href="/Mankato_P&DF/index.html">HOME</a> | <a href="pages/Plant Manager/plantManager.html">Plant Manager</a> | <a href="pages/mdo/mdo.html">MDO</a> | <a href="pages/Maintenance/maint.html">Maintenance</a> | <a href="pages/OSS/oss.html">OSS</a>   |</nav>    
-    
-    <h1>Mankato P&DF Scheduler</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.gooleapis.com/css?family=Lobster|Open+Sans"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Mankato P&DF - Scheduler Home</title>
+	</head>
 
-    <nav>| Current Weeks Schedule | Next Weeks Schedule | Full Year Lookahead |</nav>
-    
-    
+	<body>
+		<header
+			class="
+				jumbotron jumbotron-fluid
+				shadow-lg
+				p-3
+				mb-5
+				bg-body
+				rounded
+				border-bottom border-danger
+			"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 order-last">
+						<nav>
+							<ul>
+								<li>
+									<a href="../../index.html">HOME</a>
+								</li>
+								<li>
+									<a
+										href="../../Pages/Plant_Manager/plantManager.html"
+										>Plant Manager</a
+									>
+								</li>
+								<li>
+									<a href="../../Pages/MDO/mdo.html">MDO</a>
+								</li>
+								<li>
+									<a href="../../Pages/Maintenance/maint.html"
+										>Maintenance</a
+									>
+								</li>
+								<li>
+									<a href="../../Pages/OSS/oss.html">OSS</a>
+								</li>
+								<li>
+									<a href="#">LogIn</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col">
+						<h1 class="d-none d-sm-block">MANKATO P&DF</h1>
+						<h2>Scheduler</h2>
+					</div>
+				</div>
+			</div>
+		</header>
 
-</body>
+		<table>
+			<thead>
+				<tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+					<th colspan="14" id="ppA">Pay Period 1</th>
+					<th colspan="14" id="ppB">Pay Period 2</th>
+					<th colspan="14" id="ppA">Pay Period 3</th>
+					<th colspan="14" id="ppB">Pay Period 4</th>
+					<th colspan="14" id="ppA">Pay Period 5</th>
+					<th colspan="14" id="ppB">Pay Period 6</th>
+					<th colspan="14" id="ppA">Pay Period 7</th>
+					<th colspan="14" id="ppB">Pay Period 8</th>
+					<th colspan="14" id="ppA">Pay Period 9</th>
+					<th colspan="14" id="ppB">Pay Period 10</th>
+					<th colspan="14" id="ppA">Pay Period 11</th>
+					<th colspan="14" id="ppB">Pay Period 12</th>
+					<th colspan="14" id="ppA">Pay Period 13</th>
+					<th colspan="14" id="ppB">Pay Period 14</th>
+					<th colspan="14" id="ppA">Pay Period 15</th>
+					<th colspan="14" id="ppB">Pay Period 16</th>
+					<th colspan="14" id="ppA">Pay Period 17</th>
+					<th colspan="14" id="ppB">Pay Period 18</th>
+					<th colspan="14" id="ppA">Pay Period 19</th>
+					<th colspan="14" id="ppB">Pay Period 20</th>
+					<th colspan="14" id="ppA">Pay Period 21</th>
+					<th colspan="14" id="ppB">Pay Period 22</th>
+					<th colspan="14" id="ppA">Pay Period 23</th>
+					<th colspan="14" id="ppB">Pay Period 24</th>
+					<th colspan="14" id="ppA">Pay Period 25</th>
+					<th colspan="14" id="ppB">Pay Period 26</th>
+					<th colspan="14" id="ppA">Pay Period 1</th>                    
+				</tr>
+				<tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+					<th colspan="7" id="week1b">WEEK 1</th>
+					<th colspan="7" id="week2b">WEEK 2</th>
+					<th colspan="7" id="week1a">WEEK 1</th>
+					<th colspan="7" id="week2a">WEEK 2</th>
+				</tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                    <th id="sat">SAT</th>
+                    <th id="sun">SUN</th>
+                    <th id="mon">MON</th>
+                    <th id="tue">TUE</th>
+                    <th id="wed">WED</th>
+                    <th id="thu">THU</th>
+                    <th id="fri">FRI</th>
+                </tr>
+				<tr>
+                    <th style="min-width: 200px;">Employee Name</th>
+                    <th style="min-width: 63px;">SDO</th>
+                    <th style="min-width: 100px;">Begin Tour</th>
+                    <th id="date1"></th>
+                    <th id="date2"></th>
+                    <th id="date3"></th>
+                    <th id="date4"></th>
+                    <th id="date5"></th>
+                    <th id="date6"></th>
+                    <th id="date7"></th>
+                    <th id="date8"></th>
+                    <th id="date9"></th>
+                    <th id="date10"></th>
+                    <th id="date11"></th>
+                    <th id="date12"></th>
+                    <th id="date13"></th>
+                    <th id="date14"></th>
+                    <th id="date15"></th>
+                    <th id="date16"></th>
+                    <th id="date17"></th>
+                    <th id="date18"></th>
+                    <th id="date19"></th>
+                    <th id="date20"></th>
+                    <th id="date21"></th>
+                    <th id="date22"></th>
+                    <th id="date23"></th>
+                    <th id="date24"></th>
+                    <th id="date25"></th>
+                    <th id="date26"></th>
+                    <th id="date27"></th>
+                    <th id="date28"></th>
+                    <th id="date29"></th>
+                    <th id="date30"></th>
+                    <th id="date31"></th>
+                    <th id="date32"></th>
+                    <th id="date33"></th>
+                    <th id="date34"></th>
+                    <th id="date35"></th>
+                    <th id="date36"></th>
+                    <th id="date37"></th>
+                    <th id="date38"></th>
+                    <th id="date39"></th>
+                    <th id="date40"></th>
+                    <th id="date41"></th>
+                    <th id="date42"></th>
+                    <th id="date43"></th>
+                    <th id="date44"></th>
+                    <th id="date45"></th>
+                    <th id="date46"></th>
+                    <th id="date47"></th>
+                    <th id="date48"></th>
+                    <th id="date49"></th>
+                    <th id="date50"></th>
+                    <th id="date51"></th>
+                    <th id="date52"></th>
+                    <th id="date53"></th>
+                    <th id="date54"></th>
+                    <th id="date55"></th>
+                    <th id="date56"></th>
+                    <th id="date57"></th>
+                    <th id="date58"></th>
+                    <th id="date59"></th>
+                    <th id="date60"></th>
+                    <th id="date61"></th>
+                    <th id="date62"></th>
+                    <th id="date63"></th>
+                    <th id="date64"></th>
+                    <th id="date65"></th>
+                    <th id="date66"></th>
+                    <th id="date67"></th>
+                    <th id="date68"></th>
+                    <th id="date69"></th>
+                    <th id="date70"></th>
+                    <th id="date71"></th>
+                    <th id="date72"></th>
+                    <th id="date73"></th>
+                    <th id="date74"></th>
+                    <th id="date75"></th>
+                    <th id="date76"></th>
+                    <th id="date77"></th>
+                    <th id="date78"></th>
+                    <th id="date79"></th>
+                    <th id="date80"></th>
+                    <th id="date81"></th>
+                    <th id="date82"></th>
+                    <th id="date83"></th>
+                    <th id="date84"></th>
+                    <th id="date85"></th>
+                    <th id="date86"></th>
+                    <th id="date87"></th>
+                    <th id="date88"></th>
+                    <th id="date89"></th>
+                    <th id="date90"></th>
+                    <th id="date91"></th>
+                    <th id="date92"></th>
+                    <th id="date93"></th>
+                    <th id="date94"></th>
+                    <th id="date95"></th>
+                    <th id="date96"></th>
+                    <th id="date97"></th>
+                    <th id="date98"></th>
+                    <th id="date99"></th>
+                    <th id="date100"></th>
+                    <th id="date101"></th>
+                    <th id="date102"></th>
+                    <th id="date103"></th>
+                    <th id="date104"></th>
+                    <th id="date105"></th>
+                    <th id="date106"></th>
+                    <th id="date107"></th>
+                    <th id="date108"></th>
+                    <th id="date109"></th>
+                    <th id="date110"></th>
+                    <th id="date111"></th>
+                    <th id="date112"></th>
+                    <th id="date113"></th>
+                    <th id="date114"></th>
+                    <th id="date115"></th>
+                    <th id="date116"></th>
+                    <th id="date117"></th>
+                    <th id="date118"></th>
+                    <th id="date119"></th>
+                    <th id="date120"></th>
+                    <th id="date121"></th>
+                    <th id="date122"></th>
+                    <th id="date123"></th>
+                    <th id="date124"></th>
+                    <th id="date125"></th>
+                    <th id="date126"></th>
+                    <th id="date127"></th>
+                    <th id="date128"></th>
+                    <th id="date129"></th>
+                    <th id="date130"></th>
+                    <th id="date131"></th>
+                    <th id="date132"></th>
+                    <th id="date133"></th>
+                    <th id="date134"></th>
+                    <th id="date135"></th>
+                    <th id="date136"></th>
+                    <th id="date137"></th>
+                    <th id="date138"></th>
+                    <th id="date139"></th>
+                    <th id="date140"></th>
+                    <th id="date141"></th>
+                    <th id="date142"></th>
+                    <th id="date143"></th>
+                    <th id="date144"></th>
+                    <th id="date145"></th>
+                    <th id="date146"></th>
+                    <th id="date147"></th>
+                    <th id="date148"></th>
+                    <th id="date149"></th>
+                    <th id="date150"></th>
+                    <th id="date151"></th>
+                    <th id="date152"></th>
+                    <th id="date153"></th>
+                    <th id="date154"></th>
+                    <th id="date155"></th>
+                    <th id="date156"></th>
+                    <th id="date157"></th>
+                    <th id="date158"></th>
+                    <th id="date159"></th>
+                    <th id="date160"></th>
+                    <th id="date161"></th>
+                    <th id="date162"></th>
+                    <th id="date163"></th>
+                    <th id="date164"></th>
+                    <th id="date165"></th>
+                    <th id="date166"></th>
+                    <th id="date167"></th>
+                    <th id="date168"></th>
+                    <th id="date169"></th>
+                    <th id="date170"></th>
+                    <th id="date171"></th>
+                    <th id="date172"></th>
+                    <th id="date173"></th>
+                    <th id="date174"></th>
+                    <th id="date175"></th>
+                    <th id="date176"></th>
+                    <th id="date177"></th>
+                    <th id="date178"></th>
+                    <th id="date179"></th>
+                    <th id="date180"></th>
+                    <th id="date181"></th>
+                    <th id="date182"></th>
+                    <th id="date183"></th>
+                    <th id="date184"></th>
+                    <th id="date185"></th>
+                    <th id="date186"></th>
+                    <th id="date187"></th>
+                    <th id="date188"></th>
+                    <th id="date189"></th>
+                    <th id="date190"></th>
+                    <th id="date191"></th>
+                    <th id="date192"></th>
+                    <th id="date193"></th>
+                    <th id="date194"></th>
+                    <th id="date195"></th>
+                    <th id="date196"></th>
+                    <th id="date197"></th>
+                    <th id="date198"></th>
+                    <th id="date199"></th>
+                    <th id="date200"></th>
+                    <th id="date201"></th>
+                    <th id="date202"></th>
+                    <th id="date203"></th>
+                    <th id="date204"></th>
+                    <th id="date205"></th>
+                    <th id="date206"></th>
+                    <th id="date207"></th>
+                    <th id="date208"></th>
+                    <th id="date209"></th>
+                    <th id="date210"></th>
+                    <th id="date211"></th>
+                    <th id="date212"></th>
+                    <th id="date213"></th>
+                    <th id="date214"></th>
+                    <th id="date215"></th>
+                    <th id="date216"></th>
+                    <th id="date217"></th>
+                    <th id="date218"></th>
+                    <th id="date219"></th>
+                    <th id="date220"></th>
+                    <th id="date221"></th>
+                    <th id="date222"></th>
+                    <th id="date223"></th>
+                    <th id="date224"></th>
+                    <th id="date225"></th>
+                    <th id="date226"></th>
+                    <th id="date227"></th>
+                    <th id="date228"></th>
+                    <th id="date229"></th>
+                    <th id="date230"></th>
+                    <th id="date231"></th>
+                    <th id="date232"></th>
+                    <th id="date233"></th>
+                    <th id="date234"></th>
+                    <th id="date235"></th>
+                    <th id="date236"></th>
+                    <th id="date237"></th>
+                    <th id="date238"></th>
+                    <th id="date239"></th>
+                    <th id="date240"></th>
+                    <th id="date241"></th>
+                    <th id="date242"></th>
+                    <th id="date243"></th>
+                    <th id="date244"></th>
+                    <th id="date245"></th>
+                    <th id="date246"></th>
+                    <th id="date247"></th>
+                    <th id="date248"></th>
+                    <th id="date249"></th>
+                    <th id="date250"></th>
+                    <th id="date251"></th>
+                    <th id="date252"></th>
+                    <th id="date253"></th>
+                    <th id="date254"></th>
+                    <th id="date255"></th>
+                    <th id="date256"></th>
+                    <th id="date257"></th>
+                    <th id="date258"></th>
+                    <th id="date259"></th>
+                    <th id="date260"></th>
+                    <th id="date261"></th>
+                    <th id="date262"></th>
+                    <th id="date263"></th>
+                    <th id="date264"></th>
+                    <th id="date265"></th>
+                    <th id="date266"></th>
+                    <th id="date267"></th>
+                    <th id="date268"></th>
+                    <th id="date269"></th>
+                    <th id="date270"></th>
+                    <th id="date271"></th>
+                    <th id="date272"></th>
+                    <th id="date273"></th>
+                    <th id="date274"></th>
+                    <th id="date275"></th>
+                    <th id="date276"></th>
+                    <th id="date277"></th>
+                    <th id="date278"></th>
+                    <th id="date279"></th>
+                    <th id="date280"></th>
+                    <th id="date281"></th>
+                    <th id="date282"></th>
+                    <th id="date283"></th>
+                    <th id="date284"></th>
+                    <th id="date285"></th>
+                    <th id="date286"></th>
+                    <th id="date287"></th>
+                    <th id="date288"></th>
+                    <th id="date289"></th>
+                    <th id="date290"></th>
+                    <th id="date291"></th>
+                    <th id="date292"></th>
+                    <th id="date293"></th>
+                    <th id="date294"></th>
+                    <th id="date295"></th>
+                    <th id="date296"></th>
+                    <th id="date297"></th>
+                    <th id="date298"></th>
+                    <th id="date299"></th>
+                    <th id="date300"></th>
+                    <th id="date301"></th>
+                    <th id="date302"></th>
+                    <th id="date303"></th>
+                    <th id="date304"></th>
+                    <th id="date305"></th>
+                    <th id="date306"></th>
+                    <th id="date307"></th>
+                    <th id="date308"></th>
+                    <th id="date309"></th>
+                    <th id="date310"></th>
+                    <th id="date311"></th>
+                    <th id="date312"></th>
+                    <th id="date313"></th>
+                    <th id="date314"></th>
+                    <th id="date315"></th>
+                    <th id="date316"></th>
+                    <th id="date317"></th>
+                    <th id="date318"></th>
+                    <th id="date319"></th>
+                    <th id="date320"></th>
+                    <th id="date321"></th>
+                    <th id="date322"></th>
+                    <th id="date323"></th>
+                    <th id="date324"></th>
+                    <th id="date325"></th>
+                    <th id="date326"></th>
+                    <th id="date327"></th>
+                    <th id="date328"></th>
+                    <th id="date329"></th>
+                    <th id="date330"></th>
+                    <th id="date331"></th>
+                    <th id="date332"></th>
+                    <th id="date333"></th>
+                    <th id="date334"></th>
+                    <th id="date335"></th>
+                    <th id="date336"></th>
+                    <th id="date337"></th>
+                    <th id="date338"></th>
+                    <th id="date339"></th>
+                    <th id="date340"></th>
+                    <th id="date341"></th>
+                    <th id="date342"></th>
+                    <th id="date343"></th>
+                    <th id="date344"></th>
+                    <th id="date345"></th>
+                    <th id="date346"></th>
+                    <th id="date347"></th>
+                    <th id="date348"></th>
+                    <th id="date349"></th>
+                    <th id="date350"></th>
+                    <th id="date351"></th>
+                    <th id="date352"></th>
+                    <th id="date353"></th>
+                    <th id="date354"></th>
+                    <th id="date355"></th>
+                    <th id="date356"></th>
+                    <th id="date357"></th>
+                    <th id="date358"></th>
+                    <th id="date359"></th>
+                    <th id="date360"></th>
+                    <th id="date361"></th>
+                    <th id="date362"></th>
+                    <th id="date363"></th>
+                    <th id="date364"></th>
+                    <th id="date365"></th>
+                    <th id="date366"></th>
+                    <th id="date367"></th>
+                    <th id="date368"></th>
+                    <th id="date369"></th>
+                    <th id="date370"></th>
+                    <th id="date371"></th>
+                    <th id="date372"></th>
+                    <th id="date373"></th>
+                    <th id="date374"></th>
+                    <th id="date375"></th>
+                    <th id="date376"></th>
+                    <th id="date377"></th>
+                    <th id="date378"></th>
+				</tr>
+			</thead>
+            <tbody>
+                
+            </tbody>
+		</table>
+
+		<script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+
+            var currDate = new Date(2020, 11, 19);
+            for (let i = 1; i < 379; i++) {
+                var dd = currDate.getDate();
+                var mm = currDate.getMonth()+1; 
+                var yyyy = currDate.getFullYear();
+
+                if(dd<10) 
+                {
+                    dd='0'+dd;
+                } 
+                if(mm<10) 
+                {
+                    mm='0'+mm;
+                } 
+
+            var vDate = mm+'/'+dd+'/'+yyyy; 
+            console.log(vDate); 
+            let fillDate = document.getElementById('date' + i);
+            fillDate.textContent = vDate;
+            currDate.setDate(currDate.getDate() + 1);     
+            }
+
+        </script>
+	</body>
 </html>
