@@ -12,8 +12,10 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
-    color: #1f7bc5;
+#subHeading {
+    font-size: 1.25em;
+    margin-top: -.75em;
+    margin-bottom: 1em;
 }
 
 hr {
@@ -21,16 +23,12 @@ hr {
 }
 
 a {
-    color: #d8d8d8;
+    color: #ffffff;
     font-weight: bold;
 }
 
 #logo {
     height: 8em;
-}
-
-header h2 {
-    color: #d8d8d8;
 }
 
 footer {
@@ -50,3 +48,10 @@ footer {
     min-height: 200px;
 }
 
+.navbar-toggler-icon {
+    opacity: 100%;
+}
+
+.nav-link:hover {
+    color: rgb(123, 234, 255);
+}

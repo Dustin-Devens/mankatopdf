@@ -12,97 +12,96 @@
 </head>
 
 <body>
-	<header class="jumbotron jumbotron-fluid">
+	<header class="">
+
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 order-last">
-					<nav class="top-nav navbar-expand-md sticky-top navbar-dark">
-						<button class="navbar-toggler" type="button" data-toggle="collapse"
-							data-target="#pdfNavbar"><span class="navbar-toggler-icon"></span></button>
-						<div class="collapse navbar-collapse" id="pdfNavbar">
-							<ul>
-								<li class="nav-item active">
-									<a href="index.html" class="nav-link">HOME</a>
-								</li>
-								<li class="nav-item">
-									<a href="Pages/Plant_Manager/plantManager.html" class="nav-link">Plant Manager</a>
-								</li>
-								<li class="nav-item">
-									<a href="Pages/MDO/mdo.html" class="nav-link">MDO</a>
-								</li>
-								<li class="nav-item">
-									<a href="Pages/Maintenance/maint.html" class="nav-link">Maintenance</a>
-								</li>
-								<li class="nav-item">
-									<a href="Pages/OSS/oss.html" class="nav-link">OSS</a>
-								</li>
-								<li class="nav-item">
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-				<div class="col col-md-4">
-					<img src="./Images/USPS5.png" alt="USPS logo." id="logo" />
-				</div>
-				<div class="col-md-5 col-lg-6">
-					<h1>MANKATO P&DF</h1>
-					<h2 class="d-none d-md-block">Mankato, MN 56001</h2>
-				</div>
+				<h1 class="col col-md-8">MANKATO P&DF</h1>
+			</div>
+			<div class="row">
+				<h2 class="col" id="subHeading">Mankato, MN 56001</h2>
 			</div>
 		</div>
-		<hr />
+		<div class="container">
+			<nav class="navbar navbar-dark navbar-expand-md bg-dark text-light sticky-top mx-auto">
 
-		<a data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"> LogIn</i></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mankatoNavbar">
+					<span class="navbar-toggler-icon"><i class="fa fa-envelopes-bulk"></i></span>
+				</button>
 
-		<div id="loginModal" class="modal fade" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header jumbotron">
-						<h3 class="modal-title">Mankato P&DF Login</h3>
-						<button type="button" class="close text-light" data-dismiss="modal">X</button>
-					</div>
-					<div class="modal-body text-dark">
-						<div class="container-fluid">
-							<form>
-								<div class="form-row">
-									<div class="form-group col-4 col-sm-3">
-										<label class="" for="aceId">ACE ID:</label>
-									</div>
-									<div class="col">
-										<input type="text" class="form-control form-control-sm" id="aceId"
-											placeholder="Enter ACE ID">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-sm-3 col-4">
-										<label class="" for="loginPassword">Password:</label>
-									</div>
-									<div class="col">
-										<input type="password" class="form-control form-control-sm" id="loginPassword"
-											placeholder="Password">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="col">
-										<div class="form-check">
-											<input id="rememberMe" class="form-check-input" type="checkbox">
-											<label for="rememberMe" class="form-check-label">Remember me</label>
+				<div class="navbar-collapse collapse border-light" id="mankatoNavbar">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active"><i class="fa fa-home"> Home</i></a>
+						</li>
+						<li class="nav-item">
+							<a type="button" class="nav-link"><i class="fa fa-user-tie"> Plant Manager</i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-arrow-trend-down"> MDO</i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-dumpster-fire">Maintenance</i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-mug-hot">OSS</i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="ml-auto">
+					<a data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"> LogIn</i></a>
+				</div>
+
+				<div id="loginModal" class="modal fade" role="dialog">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header bg-dark text-light">
+								<h3 class="modal-title">Mankato P&DF Login</h3>
+								<button type="button" class="close text-light" data-dismiss="modal">X</button>
+							</div>
+							<div class="modal-body text-dark">
+								<div class="container-fluid">
+									<form>
+										<div class="form-row">
+											<div class="form-group col-4 col-sm-3">
+												<label class="" for="aceId">ACE ID:</label>
+											</div>
+											<div class="col">
+												<input type="text" class="form-control form-control-sm" id="aceId"
+													placeholder="Enter ACE ID">
+											</div>
 										</div>
-									</div>
+										<div class="form-row">
+											<div class="form-group col-sm-3 col-4">
+												<label class="" for="loginPassword">Password:</label>
+											</div>
+											<div class="col">
+												<input type="password" class="form-control form-control-sm"
+													id="loginPassword" placeholder="Password">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col">
+												<div class="form-check">
+													<input id="rememberMe" class="form-check-input" type="checkbox">
+													<label for="rememberMe" class="form-check-label">Remember me</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-row">
+											<button type="button" class="btn btn-secondary btn-sm ml-auto"
+												data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+										</div>
+									</form>
 								</div>
-								<div class="form-row">
-									<button type="button" class="btn btn-secondary btn-sm ml-auto"
-										data-dismiss="modal">Cancel</button>
-									<button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-								</div>
-							</form>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</nav>
 		</div>
-
 	</header>
 
 
@@ -111,7 +110,7 @@
 
 
 
-	
+
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
