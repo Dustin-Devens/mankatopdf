@@ -1,58 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.gooleapis.com/css?family=Lobster|Open+Sans"
-		/>
-		<link rel="stylesheet" href="../../styles.css" />
-		<title>Mankato P&DF - OSS Home</title>
-	</head>
 
-	<body>
-		<header class="jumbotron jumbotron-fluid shadow-lg p-3 mb-5 bg-body rounded border-bottom border-danger">
-			<div class="container ">
-				<div class="row">
-					<div class="col-sm-2 order-last">
-						<nav>
-							<ul>
-								<li>
-									<a href="../../index.html">HOME</a>
-								</li>
-								<li>
-									<a href="../../Pages/Plant_Manager/plantManager.html">Plant Manager</a>
-								</li>
-								<li>
-									<a href="../../Pages/MDO/mdo.html">MDO</a>
-								</li>
-								<li>
-									<a href="../../Pages/Maintenance/maint.html">Maintenance</a></li>
-								<li>
-									<a href="../../Pages/OSS/oss.html">OSS</a>
-								</li>
-								<li>
-									<a href="#">LogIn</a>
-								</li>
-							</ul>
-						</nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.gooleapis.com/css?family=Lobster|Open+Sans" />
+	<link rel="stylesheet" href="../../styles.css" />
+	<title>Mankato P&DF - Home</title>
+</head>
+
+<body>
+	<header class="">
+
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-4 col-md-3 col-lg-2">
+					<img src="../../images/USPS5.png" width="150px">
+				</div>
+				<div class="col col-md-8">
+					<h1>MANKATO P&DF</h1>
+					<h2 id="subHeading">OSS</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<nav class="navbar navbar-dark navbar-expand-md bg-dark text-light sticky-top mx-auto">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mankatoNavbar">
+					<span class="navbar-toggler-icon"><i class="fa fa-envelopes-bulk"></i></span>
+				</button>
+				<div class="navbar-collapse collapse border-light" id="mankatoNavbar">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a href="../../index.html" class="nav-link"><i class="fa fa-home"> Home</i></a>
+						</li>
+						<li class="nav-item">
+							<a href="../Plant_Manager/plantManager.html" type="button" class="nav-link"><i
+									class="fa fa-user-tie"> Plant Manager</i></a>
+						</li>
+						<li class="nav-item">
+							<a href="../MDO/mdo.html" class="nav-link"><i class="fa fa-arrow-trend-down"> MDO</i></a>
+						</li>
+						<li class="nav-item">
+							<a href="../Maintenance/maint.html" class="nav-link"><i
+									class="fa fa-dumpster-fire">Maintenance</i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link active"><i class="fa fa-mug-hot">OSS</i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="ml-auto">
+					<a data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"> LogIn</i></a>
+				</div>
+			</nav>
+		</div>
+
+		<div id="loginModal" class="modal fade" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-dark text-light">
+						<h3 class="modal-title">Mankato P&DF Login</h3>
+						<button type="button" class="close text-light" data-dismiss="modal">X</button>
 					</div>
-					<div class="col">
-						<h1 class="d-none d-sm-block">MANKATO P&DF</h1>
-						<h2>OSS</h2>
+					<div class="modal-body text-dark">
+						<div class="container-fluid">
+							<form>
+								<div class="form-row">
+									<div class="form-group col-4 col-sm-3">
+										<label class="" for="aceId">ACE ID:</label>
+									</div>
+									<div class="col">
+										<input type="text" class="form-control form-control-sm" id="aceId"
+											placeholder="Enter ACE ID">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-sm-3 col-4">
+										<label class="" for="loginPassword">Password:</label>
+									</div>
+									<div class="col">
+										<input type="password" class="form-control form-control-sm" id="loginPassword"
+											placeholder="Password">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="col">
+										<div class="form-check">
+											<input id="rememberMe" class="form-check-input" type="checkbox">
+											<label for="rememberMe" class="form-check-label">Remember me</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<button type="button" class="btn btn-secondary btn-sm ml-auto"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 
-		<script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
-		<script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
-		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
+	<div class="container mt-5">
+		<div class="row-content">
+			<div class="col">
+				<p>THIS IS SOME OSS CONTENT</p>
+			</div>
+			<div class="col">
+				<p>THIS IS MORE OSS CONTENT</p>
+			</div>
+		</div>
+		<div class="row-content">
+			<div class="col">
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>

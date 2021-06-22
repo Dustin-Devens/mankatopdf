@@ -53,5 +53,7 @@ footer {
 }
 
 .nav-link:hover {
-    color: rgb(123, 234, 255);
+    color: #3d3d3d;
+    background: #b1b1b1;
 }
+
