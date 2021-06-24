@@ -5,10 +5,14 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
 	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://fonts.gooleapis.com/css?family=Lobster|Open+Sans" />
 	<link rel="stylesheet" href="../../styles.css" />
-	<title>Mankato P&DF - Home</title>
+
+	<title>Mankato P&DF - MDO</title>
 </head>
 
 <body>
@@ -16,8 +20,8 @@
 
 		<div class="container">
 			<div class="row my-3">
-				<div class="col-4 col-md-3 col-lg-2">
-					<img src="../../images/USPS5.png" width="150px">
+				<div class="col-5 col-md-3 col-lg-2">
+					<a href="../../index.html"><img src="../../images/USPS5.png" width="150px"></a>
 				</div>
 				<div class="col col-md-8">
 					<h1>MANKATO P&DF</h1>
@@ -25,10 +29,11 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="container">
 			<nav class="navbar navbar-dark navbar-expand-md bg-dark text-light sticky-top mx-auto">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mankatoNavbar">
-					<span class="navbar-toggler-icon"><i class="fa fa-envelopes-bulk"></i></span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="navbar-collapse collapse border-light" id="mankatoNavbar">
 					<ul class="nav nav-tabs">
@@ -36,23 +41,23 @@
 							<a href="../../index.html" class="nav-link"><i class="fa fa-home"> Home</i></a>
 						</li>
 						<li class="nav-item">
-							<a href="../Plant_Manager/plantManager.html" type="button" class="nav-link"><i
-									class="fa fa-user-tie"> Plant Manager</i></a>
+							<a href="../Plant_Manager/plantManager.html" type="button" class="nav-link"><i class="fas fa-user-tie"> Plant
+									Manager</i></a>
 						</li>
 						<li class="nav-item">
-							<a href="" class="nav-link active"><i class="fa fa-arrow-trend-down"> MDO</i></a>
+							<a href="../MDO/mdo.html" class="nav-link active"><i class="fas fa-poo"> MDO</i></a>
 						</li>
 						<li class="nav-item">
-							<a href="../Maintenance/maint.html" class="nav-link"><i
-									class="fa fa-dumpster-fire">Maintenance</i></a>
+							<a href="../Maintenance/maint.html" class="nav-link"><i class="fas fa-dumpster-fire">
+									Maintenance</i></a>
 						</li>
 						<li class="nav-item">
-							<a href="../OSS/oss.html" class="nav-link"><i class="fa fa-mug-hot">OSS</i></a>
+							<a href="../OSS/oss.html" class="nav-link"><i class="fas fa-mug-hot"> OSS</i></a>
 						</li>
 					</ul>
 				</div>
 				<div class="ml-auto">
-					<a data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"> LogIn</i></a>
+					<a data-toggle="modal" data-target="#loginModal"><i class="fa fa-key"> LogIn</i></a>
 				</div>
 			</nav>
 		</div>
@@ -129,9 +134,9 @@
 
 
 
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

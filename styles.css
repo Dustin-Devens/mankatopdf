@@ -48,12 +48,11 @@ footer {
     min-height: 200px;
 }
 
-.navbar-toggler-icon {
-    opacity: 100%;
-}
-
 .nav-link:hover {
     color: #3d3d3d;
     background: #b1b1b1;
 }
 
+.navbar-toggler-icon {
+    opacity: 1;
+}
